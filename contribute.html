@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesTwo.css">
+    <title> ViCE</title>
+    <div class="topnav">
+      <a href="index.php">Home</a>
+      <a class="active" href="contribute.html">Contribute</a>
+      <a href="about.html">About</a>
+    </div>
+  </head>
+  <body>
+
+  <!---
+  form to get information from the user..needs to be updated for other stuff
+  just basic right now
+  --->
+  <section id="form">
+    <form action="submission.php" method="post">
+    <label for="fname">ManfName</label>
+    <input type="text" id="fname" name="manfname" placeholder="">
+
+    <label for="lname">Yearfounded</label>
+    <input type="text" id="lname" name="yearfounded" placeholder="">
+
+    <label for="lname">Founder</label>
+    <input type="text" id="lname" name="founder" placeholder="">
+
+    <label for="country">Logo</label>
+    <select id="logo" name="logo">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+  </section>
+  </body>
+  <footer>
+    In progress
+  </footer>
+</html>
