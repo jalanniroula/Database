@@ -5,10 +5,12 @@
     <link rel="stylesheet" href="stylesTwo.css">
     <title> ViCE</title>
     <div class="topnav">
-      <a href="index.php">Home</a>
+      <a  href="index.php">Home</a>
       <a class="active" href="contribute.html">Contribute</a>
+      <a href="events.php">Event</a>
       <a href="about.html">About</a>
       <a href="blog.php">Blog</a>
+      <a href="logout.php">Logout</a>
     </div>
   </head>
   <body>
@@ -17,7 +19,8 @@
   form to get information from the user..needs to be updated for other stuff
   just basic right now
   --->
-  <section id="form">
+  <p>To contibute to our manufactureer tables in database</p>
+  <section style= "width: 600px; border: 3px solid #e8ebef; background-color:#e8ebef; color:#000000;" id="form">
     <form action="submission.php" method="post">
     <label for="fname">ManfName</label>
     <input type="text" id="fname" name="manfname" placeholder="">
@@ -30,15 +33,72 @@
 
     <label for="country">Logo</label>
     <select id="logo" name="logo">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+      <option value="apple">Apple</option>
+      <option value="ibm">IBM</option>
+      <option value="Attri">Attri</option>
+      <option value="Other">Other</option>
     </select>
+    <input type="submit" value="Submit">
+  </form>
+  </section>
+
+  <p>To contibute to our model tables in database</p>
+  <section style= "width: 600px; border: 3px solid #e8ebef; background-color:#e8ebef; color:#000000;" id="form">
+    <form action="submission.php" method="post">
+    <label for="fname">Model Name</label>
+    <input type="text" id="fname" name="modelname" placeholder="">
+
+    <label for="lname">Model Type</label>
+    <input type="text" id="lname" name="modeltype" placeholder="">
+
+    <label for="lname">Released</label>
+    <input type="text" id="lname" name="modelreleased" placeholder="">
+
+    <label for="lname">Available</label>
+    <input type="text" id="lname" name="modelavailable" placeholder="">
+
+    <label for="lname">Last sold</label>
+    <input type="text" id="lname" name="modellastsold" placeholder="">
+
+    <label for="lname">Ram</label>
+    <input type="text" id="lname" name="modelram" placeholder="Number">
+
+    <label for="lname">Denom</label>
+    <input type="text" id="lname" name="modeldenom" placeholder="kb,gb,tb">
+
+
+    <label for="lname">CPU</label>
+    <input type="text" id="lname" name="modelcpu" placeholder="">
+
+    <label for="lname">CPU Speed</label>
+    <input type="text" id="lname" name="modelcpuspeed" placeholder="">
+
+    <label for="lname"> OS</label>
+    <input type="text" id="lname" name="modelos" placeholder="">
+
+    <label for="lname">Display</label>
+    <input type="text" id="lname" name="modeldisplay" placeholder="">
+
+    <label for="lname"> Bus</label>
+    <input type="text" id="lname" name="modelbus" placeholder="">
+
+    <label for="lname">Ports</label>
+    <input type="text" id="lname" name="modelports" placeholder="">
+
+    <label for="lname"> Number of Units Sold</label>
+    <input type="text" id="lname" name="modelnumsold" placeholder="">
+
+    <label for="lname">Expansion</label>
+    <input type="text" id="lname" name="modelexpansion" placeholder="">
+
+    <label for="lname">Introductory Price</label>
+    <input type="text" id="lname" name="modelintroprice" placeholder="">
+
     <input type="submit" value="Submit">
   </form>
   </section>
   </body>
   <footer>
-    In progress
+    Website In progress
   </footer>
 </html>

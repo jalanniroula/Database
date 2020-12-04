@@ -17,7 +17,7 @@ if(!$_SESSION["myemail"]){
     <div class="topnav">
       <a class="active" href="index.php">Home</a>
       <a href="contribute.html">Contribute</a>
-      <a href="events.php">Events</a>
+      <a href="events.php">Event</a>
       <a href="about.html">About</a>
       <a href="blog.php">Blog</a>
       <a href="logout.php">Logout</a>
@@ -31,40 +31,56 @@ if(!$_SESSION["myemail"]){
 featured images/computers
 --->
 <section id="features">
+  <h1 style= "text-align: center; color: #e6d5b8;">Our Database of: </h1>
+  <br>
   <div class="images">
     <div class="row">
       <div class="column">
           <img src="/computer.png" alt="Computer">
           <h4>Computers</h4>
       </div>
-
       <div class="column">
-        <img src="/laptop.jpg" alt="Laptop">
+        <img src="/laptop.png" alt="Laptop">
         <h4>Laptops</h4>
       </div>
       <div class="column">
-        <img src="/peripherals.jpg" alt="Peripherals">
+        <img src="/peripheral.jpg" alt="Peripherals">
         <h4>Peripherals</h4>
+      </div>
+      <div class="column">
+        <img src="/wearable.png" alt="Wearables">
+        <h4>Wearables</h4>
+      </div>
+      <div class="column">
+        <img src="/tablet.jpg" alt="Tablets">
+        <h4>Tablets</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="/phone.jpg" alt="Phones">
+        <h4>Phones</h4>
       </div>
     </div>
   </div>
+      <a href="#tables"><h1 style= "text-align: center; color: #e6d5b8;"><button>Go to tables</button></h1></a>
+        <a href="#searchButtons"><h1 style= "text-align: center; color: #e6d5b8;"><button>Go to Catagory</button></h1></a>
 </section>
 
 <section id="searchButtons">
-
   <div class="buttons">
-    <h1 style= "text-align: center; color: #e6d5b8;;">Click on buttons to see all devices in a Catagory</h1>
+    <h1 style= "text-align: center; color: #e6d5b8;">Click on buttons to see all devices in a Catagory</h1>
     <form action="index.php" method="post">
-      <button type="submit" name="Computer" class= "Computers results">Computers</a></button>
-      <button type="submit" name="Laptop" class= "Laptops results">Laptops</a></button>
-      <button type="submit" name="Tablet" class= "Tablets results">Tablets</a></button>
-      <button type="submit" name="Phone" class= "Phones results">Phones</a></button>
-      <button type="submit" name="Wearable" class= "Wearable results">Wearable</a></button>
-      <button type="submit" name="Peripherals" class= "Peripherals results">Peripherals</a></button>
+      <button type="submit" name="Computer" class= "results">Computers</button>
+      <button type="submit" name="Laptop" class= "results">Laptops</button>
+      <button type="submit" name="Tablet" class= "results">Tablets</button>
+      <button type="submit" name="Phone" class= "results">Phones</button>
+      <button type="submit" name="Wearable" class= "results">Wearables</button>
+      <button type="submit" name="Peripherals" class= "results">Peripherals</button>
     </form>
   </div>
-
 </section>
+
 <section id="tables">
 <?php
 if(isset($_POST['Computer'])){

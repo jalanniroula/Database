@@ -6,8 +6,10 @@
   <div class="topnav">
     <a href="index.php">Home</a>
     <a href="contribute.html">Contribute</a>
+    <a href="events.php">Event</a>
     <a href="about.html">About</a>
     <a class="active" href="blog.php">Blog</a>
+    <a href="logout.php">Logout</a>
   </div>
 </head>
 <body>

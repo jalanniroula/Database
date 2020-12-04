@@ -111,25 +111,7 @@ th, td {
   padding: 5% 5% 5% 5%;
 
 }
-.Computers {
-  background-image: url("/computer.png");
 
-}
-.Laptops {
-  background-image: url("/laptop.jpg");
-}
-.Tablets {
-  background-image: url("/computer.png");
-}
-.Phones {
-  background-image: url("/computer.png");
-}
-.Wearable {
-  background-image: url("/computer.png");
-}
-.Peripherals {
-  background-image: url("/computer.png");
-}
 .results {
   outline: none;
   border: 5px solid #404B69;
@@ -139,8 +121,8 @@ th, td {
   font-weight: 900;
   color: #e6d5b8;;
   border-radius: 15px;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: auto;
   text-align: center;
   margin: 30px;
   background-color: #1f6f8b;

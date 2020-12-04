@@ -4,10 +4,12 @@
   <link rel="stylesheet" href="styles.css">
   <title> ViCE</title>
   <div class="topnav">
-    <a href="index.php">Home</a>
+    <a  href="index.php">Home</a>
     <a href="contribute.html">Contribute</a>
+    <a href="events.php">Event</a>
     <a href="about.html">About</a>
     <a class="active" href="blog.php">Blog</a>
+    <a href="logout.php">Logout</a>
   </div>
 </head>
 <body>
@@ -35,7 +37,7 @@ function ReadData()
       }
     try
       {
-        $sql = "SELECT * from dbo.tbl_blog_entries";
+        $sql = "SELECT * from dbo.tbl_blog_entries order by blog_id desc";
         $result = sqlsrv_query($conn,$sql);
         if ($result == FALSE)
             die(print_r(sqlsrv_errors(),true));

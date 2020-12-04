@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title> ViCE</title>
+    <div class="topnav">
+      <a class="active" href="index.php">Home</a>
+      <a href="contribute.html">Contribute</a>
+      <a href="events.php">Event</a>
+      <a href="about.html">About</a>
+      <a href="blog.php">Blog</a>
+      <a href="logout.php">Logout</a>
+      <form action="searchResults.php" method="post" >
+        <input type="text" name="valueToSearch" placeholder="Search Record.."></br>
+      </form>
+    </div>
+  </head>
+  <body>
+<!---
+featured images/computers
+--->
+<section id="features">
+  <div class="images">
+    <div class="row">
+      <div class="column">
+          <img src="/computer.png" alt="Computer">
+          <h4>Computers</h4>
+      </div>
+
+      <div class="column">
+        <img src="/laptop.png" alt="Laptop">
+        <h4>Laptops</h4>
+      </div>
+      <div class="column">
+        <img src="/peripheral.jpg" alt="Peripherals">
+        <h4>Peripherals</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="searchButtons">
+  <div class="buttons">
+    <h1 style= "text-align: center; color: #e6d5b8;">Click on buttons to see all devices in a Catagory</h1>
+    <form action="index.php" method="post">
+      <button type="submit" name="Computer" class= "Computers results">Computers</button>
+      <button type="submit" name="Laptop" class= "Laptops results">Laptops</button>
+      <button type="submit" name="Tablet" class= "Tablets results">Tablets</button>
+      <button type="submit" name="Phone" class= "Phones results">Phones</button>
+      <button type="submit" name="Wearable" class= "Wearables results">Wearable</button>
+      <button type="submit" name="Peripherals" class= "Peripherals results">Peripherals</button>
+    </form>
+  </div>
+</section>
+
+<section id="tables">
+
+
+</section>
+  </body>
+  <footer>
+    Hello
+  </footer>
+</html>
